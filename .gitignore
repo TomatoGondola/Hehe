@@ -153,8 +153,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 .dmypy.json
-dmypy.json
-
+git commit -m "first commit"
 # Pyre type checker
 .pyre/
 
