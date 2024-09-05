@@ -1,10 +1,17 @@
 from django.shortcuts import render
+from .models import Listing
 
 # Create your views here.
-def index(request):
-    return render(request, "listings/listings.html")
 
-def listing(request):
+def index(request):
+    # ? get all data from the listing database
+    listings = Listing.objects.all()
+    # ? pass database records into listings context
+    context = {'listings':listings}
+    #contexts = { 'name' : 'NEDM', 'community' : 'The dirtiest of dirties', }
+    return render(request, "listings/listings.html", context,)
+
+def listing(request):   
     return render(request, "listings/listing.html")
 
 def search(request):
