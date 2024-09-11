@@ -9,6 +9,7 @@ bedroom_choices = {
     '8': 8,
     '9': 9,
     '10': 10,
+    '12': 12,
 }
 
 price_choices =  {
