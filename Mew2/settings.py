@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
-    'accounts.apps.AccountsConfig'
+    'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     ]
 
 MIDDLEWARE = [
@@ -146,3 +147,9 @@ MESSAGE_TAGS = {
     messages.INFO : 'info',
     messages.WARNING : 'warning',
 }
+
+EMAIL_HOST = 'smtp-relay.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'protoawoo@gmail.com'
+EMAIL_HOST_PASSWORD = 'clubconflict.com168'
+EMAIL_USE_TLS = True
