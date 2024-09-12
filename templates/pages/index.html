@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 {% load humanize %}
+{% include 'partials/__alerts.html' %}
     <section id="showcase">
       <div class="container text-center">
         <div class="home-search p-5">
@@ -85,7 +86,7 @@
       <div class="container">
         <h3 class="text-center mb-3">Latest Listings</h3>
         <div class="row">
-          <!-- Listing 1 -->
+          <!-- Latest Listings -->
           {% if listings %}
           <!------ for loop to gen items ------>
           {% for listing in listings %}
